@@ -37,7 +37,7 @@ def alter_hp(hp,db)
   SET hp = ?
   WHERE CustomerID = ?;
   SQL
-  db.execute(sql,hp,self.id).last
+  db.execute(sql,hp,self.id)
   
   
   
