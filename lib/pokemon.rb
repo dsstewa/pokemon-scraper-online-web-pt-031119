@@ -27,7 +27,7 @@ class Pokemon
     #binding.pry
     dood = db.execute(sql,id).last
     binding.pry
-    a = Pokemon.new(dood[1],dood[2],db,dood[0])
+    a = Pokemon.new(dood[1],dood[2],db,dood[0],dood[3])
     a
     
   end
