@@ -35,7 +35,7 @@ def alter_hp(hp,db)
   sql = <<-SQL
   UPDATE pokemon
   SET hp = ?
-  WHERE CustomerID = ?;
+  WHERE id = ?;
   SQL
   db.execute(sql,hp,self.id)
   
