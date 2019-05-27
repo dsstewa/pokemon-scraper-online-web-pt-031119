@@ -33,12 +33,13 @@ class Pokemon
 def alter_hp(hp,db)
   
   sql = <<-SQL
-  
-  
+  UPDATE pokemon
+  SET hp = ?
+  WHERE CustomerID = ?;
   SQL
+  db.execute(sql,hp,self.id).last
   
   
-  binding.pry
   
 end
   
