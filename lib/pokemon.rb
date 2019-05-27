@@ -31,6 +31,13 @@ class Pokemon
   end
   
 def alter_hp(hp,db)
+  
+  sql = <<-SQL
+  
+  
+  SQL
+  
+  
   binding.pry
   
 end
